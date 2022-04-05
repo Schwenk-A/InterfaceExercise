@@ -42,7 +42,27 @@ namespace InterfaceExercise
 
             var car = new Car();
             var truck = new Truck();
-            var SUV = new SUV();
+            var suv = new SUV();
+
+
+            suv.HasCargoHold = "yes";
+            suv.HowManyDoors = 4;
+            suv.HasEngine = true;
+            suv.HasWheels = true;
+            suv.ThirdRowSeat = true;
+            suv.Make = "mitsubishi";
+            suv.Motto = "Drive your Ambition";
+            suv.Logo = "Red diamond with two red parallelogram underneath";
+
+
+            truck.TruckBedSize = 5.5;
+            truck.HasFourWheelDrive = true;
+            truck.HowManyDoors = 4;//--
+            truck.HasEngine = true;//--
+            truck.HasWheels = true;
+            truck.Make = "Ford";
+            truck.Motto = "Built Ford Tough";
+            truck.Logo = "Oblong blue circle with the word FORD inside";
 
             car.HasConvertibleTop = true;
             car.HasTrunk = true;
@@ -53,36 +73,83 @@ namespace InterfaceExercise
             car.Motto = "Mazda Feel Alive";
             car.Logo = "A silver circle with an M in the middle";
 
-            truck.TruckBedSize = 5.5;
-            truck.HasFourWheelDrive = true;
-            truck.HowManyDoors = 4;
-            truck.HasEngine = true;
-            truck.HasWheels = true;
-            truck.Make = "Ford";
-            truck.Motto = "Built Ford Tough";
-            truck.Logo = "Oblong blue circle with the word FORD inside";
-
-            SUV.HasCargoHold = "yes";
-            SUV.HowManyDoors = 4;
-            SUV.HasEngine = true;
-            SUV.HasWheels = true;
-            SUV.ThirdRowSeat = true;
-            SUV.Make = "mitsubishi";
-            SUV.Motto = "Built Ford Tough";
-            SUV.Logo = "Oblong blue circle with the word FORD inside";
-
             Console.WriteLine($"I have three vehicles here one is a car, one is a truck, and one is a SUV,");
-            Console.WriteLine($" Which would you like to choose?");
+            Console.WriteLine($" Here is what we have");
+            Console.ReadLine();
+
+            //_____________________________________________________________________
+
+
+            Console.Clear();
+            Console.WriteLine($"{car.Make} The company motto is{car.Motto}");
+            Console.WriteLine("__________________________________________________");
+            Console.WriteLine($"Lets do a checklist to see if it ready to drive");
+            Console.WriteLine($"Engine?             {car.HasEngine}");
+            Console.WriteLine($"Wheels?             {car.HasWheels}");
+            Console.WriteLine($"How many Doors?     {car.HowManyDoors}");
+            Console.WriteLine($"FConvertible Top?   {car.HasConvertibleTop}");
+            Console.WriteLine($"Trunk size?         {car.HasTrunk}");
+            Console.WriteLine($"and last but not least the logo on the side {car.Logo}");
+            Console.WriteLine("All set! Next vehicle");
+            Console.ReadLine();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            //SUV VEHICLE________________________________________________________________
+            Console.Clear();
+            Console.WriteLine($"{truck.Make} The company motto is{truck.Motto}");
+            Console.WriteLine("__________________________________________________");
+            Console.WriteLine($"Lets do a checklist to see if it ready to drive");
+            Console.WriteLine($"Engine?             {truck.HasEngine}");
+            Console.WriteLine($"Wheels?             {truck.HasWheels}");
+            Console.WriteLine($"How many Doors?     {truck.HowManyDoors}");
+            Console.WriteLine($"Four Wheel Drive?   {truck.HasFourWheelDrive}");
+            Console.WriteLine($"TruckBedSize?       {truck.TruckBedSize}");
+            Console.WriteLine($"and last but not least the logo on the side {truck.Logo}");
+            Console.WriteLine("All set! Next vehicle");
+            Console.ReadLine();
+
+
+            //SUV VEHICLE________________________________________________________________
+
+            Console.Clear();
+            Console.WriteLine($"{suv.Make} The company motto is{suv.Motto}");
+            Console.WriteLine("__________________________________________________");
+            Console.WriteLine($"Lets do a checklist to see if it ready to drive");
+            Console.WriteLine($"Engine?             {suv.HasEngine}");
+            Console.WriteLine($"Wheels?             {suv.HasWheels}");
+            Console.WriteLine($"How many Doors?     {suv.HowManyDoors}");
+            Console.WriteLine($"Third row seat?     {suv.ThirdRowSeat}");
+            Console.WriteLine($"Cargo hold?         {suv.HasCargoHold}");
+            Console.WriteLine($"and last but not least the logo on the side {suv.Logo}");
+            Console.WriteLine("All set! All vehicles ready!");
+            Console.ReadLine();
+
+
+
+
+
+
 
 
 
         }
 
 
-
-    }
-    }
-
-        
+    
+    }      
 }
 
